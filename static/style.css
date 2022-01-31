@@ -1,51 +1,55 @@
 html {
-    font-family: sans-serif;
-    background: AntiqueWhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: rgb(8, 8, 102);
     padding: 1rem;
 }
 
 body {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 h1 {
-    color: rgb(0, 0, 0);
-    font-family: sans-serif;
+    color: rgb(8, 8, 102);
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 1rem 0;
     text-align: center;
 }
 
 a {
-    color: CornflowerBlue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(16, 81, 202);
     text-decoration: none;
 }
 
 hr {
     border: none;
-    border-top: 1px solid lightgray;
+    border-top: 1px solid white;
 }
 
 nav {
-    background: AntiqueWhite;
-    padding: 0 0.5rem;
+    background: white;
+    padding: 0.5rem 0.5rem;
+    margin: 0.25rem 0rem 1rem 0rem;
     border-radius: 25px;
 }
 
 nav ul  {
     display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 0 0 1rem 1rem;
+    padding: 0rem;
 }
 
 nav ul li a {
     display: block;
-    padding: 0.5rem;
+    padding:0.5rem;
 }
 
 .content {
-    padding: 0 1rem 1rem;
+    font-family: fantasy;
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 0.5rem 0.5rem 1rem 1rem;
     background: white;
     border-radius: 25px;
 }

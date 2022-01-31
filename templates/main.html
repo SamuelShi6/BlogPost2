@@ -1,3 +1,10 @@
-<!doctype html>
-<title>PIC16B Website</title>
-<p>Hello! This html is from a separate HTML file.</p>
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Introduction{% endblock %}</h1>
+{% endblock %}
+
+
+{% block content %}
+<p>In this blog post, we aim to construct a message bank to learn more about web development and database management.</p>
+{% endblock %}
