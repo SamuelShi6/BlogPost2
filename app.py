@@ -22,6 +22,15 @@ def submit():
         except:
             return render_template('submit.html', error = True)
 
+@app.route('/view/', methods = ['POST', 'GET'])
+def view():
+    results = random_message(5)
+    try:
+        return render_template('view.html', results = results)
+    except:
+        return render_template('view.html')
+        
+
 def get_message_db():
     if 'message_db' not in g:
         g.message_db = sqlite3.connect("messages_db.sqlite")
@@ -50,5 +59,9 @@ def insert_message(request):
     db.commit()
     db.close()
 
-
-
+def random_message(n):
+    db = get_message_db()
+    c = db.cursor()
+    c.execute(f"SELECT handle, message FROM messages ORDER BY RANDOM() LIMIT {n}")
+    results = c.fetchall()
+    return results
