@@ -9,13 +9,17 @@
       <label for="message">Your Message: </label>
       <input name="message" id="message">
       <br>
-      <label for="name">Your Name or Handle: </label>
-      <input name="name" id="name">
+      <label for="handle">Your Name or Handle: </label>
+      <input name="handle" id="handle">
       <br>
       <input type="submit" value="Submit Message">
   </form>
-  {% if name %}
-  <br>
-  <b>Thanks for submitting a message!</b>
+  {% if thanks %}
+    <br>
+    Thanks for submitting a file!
+  {% endif %}
+  {% if error %}
+    <br>
+    Oh no, we couldn't use that file! 
   {% endif %}
 {% endblock %}
